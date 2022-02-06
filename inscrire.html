@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sahti </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<script>
+    function vues() {
+        btn = document.getElementById('eaye').value;
+        btn1 = document.getElementById('eaye1').value;
+        btnv = document.getElementById('btnv').innerHTML;
+
+        if (btnv == '<i class="far fa-eye"></i>') {
+            document.getElementById('mdp').type = "text";
+            document.getElementById('btnv').innerHTML = btn1
+        } else {
+            document.getElementById('btnv').innerHTML = btn;
+            document.getElementById('mdp').type = "password";
+        }
+    }
+    function vues1() {
+            btn = document.getElementById('eaye').value;
+            btn1 = document.getElementById('eaye1').value;
+            btnv = document.getElementById('btnv').innerHTML;
+
+            if (btnv == '<i class="far fa-eye"></i>') {
+                document.getElementById('mdp1').type = "text";
+                document.getElementById('btnv').innerHTML = btn1
+            } else {
+                document.getElementById('btnv').innerHTML = btn;
+                document.getElementById('mdp1').type = "password";
+            }
+        }
+</script>
+
+<body>
+    <header class="header">
+    <a href="index.html">
+        <img src="image/Capture.PNG" width="50em" class="logo" alt="">
+        <a href="index.html" class="logo"> sahti connecter</a>
+    </a>
+        <nav class="navbar">
+            
+        </nav>
+
+
+    </header>
+    <section class="home" id="home">
+
+        <div class="image">
+            <img src="image/undraw_doctors_hwty.svg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Créer nouveau compte sahti</h3>
+            <p>sahti app web et mobile pour améliorer le service medicale et urgence en tunis</p>
+            <a href="connecter.html" class="btn"> se connecter <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </section>
+
+    <section class="book" id="book">
+
+        <h1 class="heading"> <span>Créer nouveau compte </span> a sahti </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="image/undraw_online_collaboration_re_bkpm.svg" alt="">
+            </div>
+
+            <form action="" method="post">
+                <h3>S’inscrire</h3>
+                <div class="err">
+                    <p> err</p>
+                </div>
+                <div class="valide">
+                    <p> verifier votre comtpe   </p>
+                </div>
+                <input type="text" placeholder="saisir votre nom" class="box">
+                <input type="text" placeholder="saisir votre prenom" class="box">
+                <input type="text" placeholder="saisir votre num tel" class="box">  
+                <input type="date"  class="box">
+                <input type="email" placeholder="saisir votre email" class="box">
+                <input type="hidden" id="eaye" value="<i class='far fa-eye'></i>">
+                <input type="hidden" id="eaye1" value="<i class='fas fa-eye-slash'></i>">
+                <button type="button" onclick="vues()" id="btnv" class="btn1"><i class="far fa-eye"></i></button>
+                <input type="password" id="mdp" placeholder="saisir votre mot de passe" class="box">
+                <button type="button" onclick="vues1()" id="btnv" class="btn1"><i class="far fa-eye"></i></button>
+                <input type="password" id="mdp1" placeholder="confirmier votre mot de passe" class="box">
+                <input type="submit" value="S’inscrire" class="btn">
+                <br>
+                <br>
+                <h1 class="or">----------------------------OR----------------------------</h1>
+                <br>
+                <br>
+                <div class="box">
+                    <button class="btn"><i class="fab fa-google"></i></button>
+                    <button class="btn"><i class="fab fa-facebook"></i></button>
+                </div>
+                
+
+            </form>
+
+        </div>
+
+    </section>
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Liens rapides</h3>
+                <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> about </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> doctors </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> book </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> blogs </a>
+            </div>
+
+            <div class="box">
+                <h3>Nos services</h3>
+                <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+            </div>
+
+            <div class="box">
+                <h3>Informations de contact</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +216-93-509-777</a>
+                <a href="#"> <i class="fas fa-phone"></i> +216-71-955-751 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> commercial.ambulance@gmail.com </a>
+                <a href="#"> <i class="fas fa-envelope"></i> commercial.ambulance@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i>105 Bd Louis Braille Cité El Khadhra, Tunis </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> créé par <span>mr. issam ben othmen & oumima nefzi & nihed aloui & balkis</span>tous les
+            droits sont réservés </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
